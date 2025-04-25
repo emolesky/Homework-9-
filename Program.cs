@@ -1,4 +1,4 @@
-﻿namespace Reverse
+﻿namespace LastWord
 {
     internal class Program
     {

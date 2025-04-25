@@ -1,4 +1,4 @@
-﻿namespace LastWord
+﻿namespace Majority
 {
     internal class Program
     {

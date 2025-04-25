@@ -1,4 +1,4 @@
-﻿namespace Majority
+﻿namespace HappyNumber
 {
     internal class Program
     {

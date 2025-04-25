@@ -4,25 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Zeros
+namespace Reverse
 {
     internal class Solution
     {
-        public void MoveZeros(int[] nums)
+        public void ReverseString(char[] s)
         {
-            int insertPos = 0;
+            int left = 0;
+            int right = s.Length - 1;
+            while (left < right)
+            {
+                char temp = s[left];
+                s[left] = s[right];
+                s[right] = temp;
 
-            for(int i = 0; i< nums.Length; i++)
-            {
-                if (nums[i] != 0)
-                {
-                    nums[insertPos] = nums[i];
-                    insertPos++;
-                }
-            }
-            for(int i = insertPos; i < nums.Length;i++)
-            {
-                nums[i] = 0;
+                left++;
+                right--;
             }
         }
     }
